@@ -12,4 +12,9 @@ export const StyledWrapper = styled.div`
   ${scrollbar}
 `;
 
+export const StyledEmpty = styled.p`
+  color: ${({ theme }) => theme.colors.black};
+  text-align: center;
+`;
+
 export const StyledList = styled.div``;

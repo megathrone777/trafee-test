@@ -14,7 +14,10 @@ const List: React.FC = () => {
       {smartLinks && !!smartLinks.length && (
         <StyledList>
           {smartLinks.map(
-            ({ name, smartlinkVertical, balance, epm }: TSmartLink, index) => (
+            (
+              { name, smartlinkVertical, balance, epm }: TSmartLink,
+              index
+            ): React.ReactElement => (
               <Item
                 key={`${name}-${smartlinkVertical}-${index}`}
                 name={name}

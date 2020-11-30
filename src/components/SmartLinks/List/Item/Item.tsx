@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useNotifications } from "reapop";
 
-import { archiveLink } from "~/store/actions";
+import { archiveLink, removeLink } from "~/store/actions";
 import { MainContext } from "~/store";
 import { TSmartLink } from "~/store/initialState";
 import {
@@ -66,6 +66,23 @@ const Item: React.FC<TSmartLink> = ({
     );
   };
 
+  const handleDelete = (): void => {
+    dispatch(removeLink(name));
+
+    notify({
+      dismissAfter: 1000,
+      position: "top-left",
+      status: "error",
+      title: `Link deleted`,
+    });
+
+    fetch(`https://www.trafee.com/smartlink/delete/281244?id=${name}`).then(
+      (data) => {
+        console.info(data);
+      }
+    );
+  };
+
   return (
     <StyledWrapper>
       <StyledLayout isOpened={isOpened} onClick={handleOpened}>
@@ -118,7 +135,7 @@ const Item: React.FC<TSmartLink> = ({
           Archive
         </StyledArchive>
 
-        <StyledDelete type="button">
+        <StyledDelete onClick={handleDelete} type="button">
           <StyledActionIcon>
             <StyledSVGSymbol
               xmlns="http://www.w3.org/2000/svg"

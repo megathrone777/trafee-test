@@ -3,6 +3,7 @@ import { TSmartLink } from "./initialState";
 enum TActionTypes {
   SetLinks = "SET_LINKS",
   ArchiveLink = "ARCHIVE_LINK",
+  RemoveLink = "REMOVE_LINK",
   SwitchTab = "SWITCH_TAB",
 }
 
@@ -21,9 +22,14 @@ const archiveLink = (smartLink: TSmartLink): TAction => ({
   type: TActionTypes.ArchiveLink,
 });
 
+const removeLink = (name: string): TAction => ({
+  payload: name,
+  type: TActionTypes.RemoveLink,
+});
+
 const switchTab = (tab: number): TAction => ({
   payload: tab,
   type: TActionTypes.SwitchTab,
 });
 
-export { TActionTypes, TAction, setLinks, archiveLink, switchTab };
+export { TActionTypes, TAction, setLinks, archiveLink, switchTab, removeLink };

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Item } from "./Item";
 import { MainContext } from "~/store";
 import { TSmartLink } from "~/store/initialState";
-import { StyledWrapper, StyledList } from "./styled";
+import { StyledWrapper, StyledList, StyledEmpty } from "./styled";
 
 const Archive: React.FC = () => {
   const { state } = useContext(MainContext);
@@ -11,10 +11,13 @@ const Archive: React.FC = () => {
 
   return (
     <StyledWrapper>
-      {archivedLinks && !!archivedLinks.length && (
+      {archivedLinks && !!archivedLinks.length ? (
         <StyledList>
           {archivedLinks.map(
-            ({ name, smartlinkVertical, balance, epm }: TSmartLink, index) => (
+            (
+              { name, smartlinkVertical, balance, epm }: TSmartLink,
+              index
+            ): React.ReactElement => (
               <Item
                 key={`${name}-${smartlinkVertical}-${index}`}
                 name={name}
@@ -25,6 +28,8 @@ const Archive: React.FC = () => {
             )
           )}
         </StyledList>
+      ) : (
+        <StyledEmpty>No archived links</StyledEmpty>
       )}
     </StyledWrapper>
   );

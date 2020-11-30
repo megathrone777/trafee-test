@@ -1,7 +1,7 @@
 import React from "react";
 
 import { TAction } from "./actions";
-import { TState } from "./initialState";
+import { TState, TSmartLink } from "./initialState";
 
 const mainReducer: React.Reducer<TState, TAction> = (state, action) => {
   const { payload, type } = action;
@@ -20,6 +20,13 @@ const mainReducer: React.Reducer<TState, TAction> = (state, action) => {
     SWITCH_TAB: () => ({
       ...state,
       activeTab: payload,
+    }),
+
+    REMOVE_LINK: () => ({
+      ...state,
+      smartLinks: state.smartLinks.filter(
+        (smartLink: TSmartLink) => smartLink.name !== payload
+      ),
     }),
 
     DEFAULT: () => {
