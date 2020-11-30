@@ -1,0 +1,154 @@
+[
+  {
+    "name": "email_campaign_1",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Adult dating",
+    "balance": 67817,
+    "epm": 43421
+  },
+  {
+    "name": "traffic_shoptest",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Mainstream",
+    "balance": 5128,
+    "epm": 44704
+  },
+  {
+    "name": "test new",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Adult dating",
+    "balance": 1165,
+    "epm": 13142
+  },
+  {
+    "name": "test2",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 83107,
+    "epm": 36243
+  },
+  {
+    "name": "mainstream_dating",
+    "status": 1,
+    "trafficType": "Social",
+    "smartlinkVertical": "Mainstream Dating",
+    "balance": 89092,
+    "epm": 57642
+  },
+  {
+    "name": "hilltop_bannder",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 35807,
+    "epm": 33583
+  },
+  {
+    "name": "hilltop_mainstream",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Mainstream",
+    "balance": 73862,
+    "epm": 89450
+  },
+  {
+    "name": "\u0442\u0435\u0441\u0442",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult games",
+    "balance": 3973,
+    "epm": 12390
+  },
+  {
+    "name": "bizzopp1",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Business Opportunities",
+    "balance": 39919,
+    "epm": 11130
+  },
+  {
+    "name": "test2",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Gay Dating",
+    "balance": 27776,
+    "epm": 7523
+  },
+  {
+    "name": "test1231321",
+    "status": 99,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 44264,
+    "epm": 78762
+  },
+  {
+    "name": "test2",
+    "status": 99,
+    "trafficType": "Email",
+    "smartlinkVertical": "Adult dating",
+    "balance": 51445,
+    "epm": 99815
+  },
+  {
+    "name": "test",
+    "status": 99,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 70917,
+    "epm": 37895
+  },
+  {
+    "name": "test",
+    "status": 99,
+    "trafficType": "Email",
+    "smartlinkVertical": "Adult dating",
+    "balance": 20003,
+    "epm": 62492
+  },
+  {
+    "name": "test1",
+    "status": 99,
+    "trafficType": "Email",
+    "smartlinkVertical": "Adult dating",
+    "balance": 49696,
+    "epm": 44164
+  },
+  {
+    "name": "test",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 11060,
+    "epm": 6686
+  },
+  {
+    "name": "test",
+    "status": 1,
+    "trafficType": "Email",
+    "smartlinkVertical": "Gay Dating",
+    "balance": 97207,
+    "epm": 57650
+  },
+  {
+    "name": "Dada",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 93656,
+    "epm": 35977
+  },
+  {
+    "name": "kek",
+    "status": 1,
+    "trafficType": "SEO",
+    "smartlinkVertical": "Adult dating",
+    "balance": 23574,
+    "epm": 92335
+  }
+]
