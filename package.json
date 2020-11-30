@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "author": "archibog2017@gmail.com",
   "scripts": {
-    "start": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "dependencies": {
     "react": "^16.13.1",
